@@ -11,12 +11,13 @@ class UploadImg
 		end.submit		
 	end
  
-def UploadImg.geturl
-link=@a.get(@host+'gallery').search("//a[@target='_blank']").first['href']+".#{@enhanced_image}"
-return	@@hotlink=link.gsub!(/\/view\//,"/")	
-end
+	def UploadImg.geturl
+		link=@a.get(@host+'gallery').search("//a[@target='_blank']").first['href']+".#{@enhanced_image}"
+	return	link.gsub!(/\/view\//,"/")	
+	end
 
 end
+
 
 
 
