@@ -25,9 +25,5 @@ class UploadImg
 	return hotlink
 	end#end
 end
-#использование для тех кто в танке
-obj=UploadImg.new
-obj.upload_one_pictures('/home/cblnok/Картинки/422435_92f6c8de6c54530040ff60fecc35de5f.jpg')
-obj.get_url_for_one_picture
-puts obj.get_url_for_one_picture
+
 
